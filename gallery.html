@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photo Gallery — STEAM Strong</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo-wrap" href="index.html">
+    <img class="nav-logo-img" src="assets/images/logo.png" alt="STEAM Strong Logo">
+    <div class="nav-logo-text">STEAM <span>Strong</span></div>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="programs.html">Programs</a></li>
+    <li><a href="gallery.html" class="active">Gallery</a></li>
+    <li><a href="donate.html">Donate</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li class="nav-mobile-cta"><a href="donate.html" class="nav-donate-mobile">Donate Now</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="donate.html" class="nav-donate">Donate Now</a>
+    <button class="nav-hamburger" id="hamburger" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <p class="page-hero-eyebrow">Our Impact</p>
+    <h1>The Work<br>in Action</h1>
+    <p>From classrooms to celebrations — real moments from our global programs.</p>
+  </div>
+</section>
+
+<!-- FULL GALLERY -->
+<section class="impact reveal">
+  <div class="impact-header">
+    <p class="section-label">Photo Gallery</p>
+    <h2 class="section-title">Moments That Matter</h2>
+    <p class="section-sub">Click any photo to view it full size.</p>
+  </div>
+  <div class="gallery-grid">
+    <div class="gallery-item tall" onclick="openLightbox(this)">
+      <img src="assets/images/gallery/photo-6.png" alt="Tailoring class">
+      <div class="gallery-caption">Tailoring Class — Ambattur</div>
+    </div>
+    <div class="gallery-item" onclick="openLightbox(this)">
+      <img src="assets/images/gallery/photo-7.png" alt="Christmas celebration">
+      <div class="gallery-caption">Christmas Celebration 2025</div>
+    </div>
+    <div class="gallery-item" onclick="openLightbox(this)">
+      <img src="assets/images/gallery/photo-2.png" alt="Program session">
+      <div class="gallery-caption">Program Session — North India</div>
+    </div>
+    <div class="gallery-item wide" onclick="openLightbox(this)">
+      <img src="assets/images/gallery/photo-5.png" alt="Student recognition">
+      <div class="gallery-caption">Student Recognition Ceremony</div>
+    </div>
+    <div class="gallery-item" onclick="openLightbox(this)">
+      <img src="assets/images/gallery/photo-3.png" alt="Graduation moments">
+      <div class="gallery-caption">Graduation Moments</div>
+    </div>
+    <div class="gallery-item wide" onclick="openLightbox(this)">
+      <img src="assets/images/gallery/photo-1.png" alt="Global Helps Network">
+      <div class="gallery-caption">Global Helps Network — Seattle Fundraiser 2025</div>
+    </div>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div>
+    <a class="footer-logo-wrap" href="index.html">
+      <img class="footer-logo-img" src="assets/images/logo.png" alt="STEAM Strong">
+      <div class="footer-logo-text">STEAM <span>Strong</span></div>
+    </a>
+    <p class="footer-tagline">"Equipping young minds. Shining their light. Changing the world."</p>
+    <p class="footer-501">501(c)(3) Nonprofit Organization · Est. 2019</p>
+  </div>
+  <div class="footer-col">
+    <h4>Navigate</h4>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="programs.html">Programs</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="donate.html">Donate</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+  <div class="footer-col">
+    <h4>Support Us</h4>
+    <ul>
+      <li><a href="mailto:steamstrong14@gmail.com">Email to Donate</a></li>
+      <li><a href="donate.html">Zelle QR Code</a></li>
+      <li><a href="contact.html">Volunteer</a></li>
+      <li><a href="contact.html">Partner With Us</a></li>
+    </ul>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy">© 2026 STEAM Strong. All Rights Reserved.</p>
+    <p class="footer-copy">Equipping young minds. Shining their light. Changing the world.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
